@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Personal Portfolio Website in React
 
 
@@ -34,5 +34,4 @@ Your app is ready to be deployed!
 
 
 =======
-# Lasya_Portfolio
->>>>>>> 0873c7254fbd81196ca428577676341d79d55f2b
+
