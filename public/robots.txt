@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://sai-lasya-mynampati-portfolio.vercel.app/sitemap.xml
+Sitemap: /sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
