@@ -2,10 +2,12 @@
   "name": "sai-lasya-mynampati-portfolio",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://lasyamynampati.vercel.app",
   "description": "Professional portfolio website of Sai Lasya Mynampati - Frontend Developer and UI/UX Designer",
   "author": {
     "name": "Sai Lasya Mynampati",
-    "email": "mynampatisailasya@gmail.com"
+    "email": "mynampatisailasya@gmail.com",
+    "url": "https://lasyamynampati.vercel.app"
   },
   "keywords": [
     "portfolio",
@@ -14,7 +16,8 @@
     "react",
     "javascript",
     "web-developer",
-    "sai-lasya-mynampati"
+    "sai-lasya-mynampati",
+    "vercel"
   ],
   "repository": {
     "type": "git",
