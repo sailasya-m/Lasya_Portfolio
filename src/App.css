@@ -190,6 +190,48 @@ span.navbar-text {
 	height: 100%;
 	position: absolute;
 }
+
+/* Add styling for the vvd button class */
+button.vvd {
+  font-weight: 700;
+  color: #6f3c61;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+button.vvd span {
+  z-index: 1;
+  position: relative;
+}
+
+button.vvd::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #bcdb7c;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+button.vvd:hover {
+  color: #fff;
+}
+
+button.vvd:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
@@ -354,6 +396,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/* New Skills Grid Styling */
+.skill-grid {
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.skill-item {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px 10px;
+}
+
+.skill-item img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.skill-item h5 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -483,7 +552,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Projects Css ************/
 .contact {
   background:#bcb3cb;
-  padding: 60px 0 200px 0;
+  padding: 60px 0 120px 0;
 }
 .contact img {
   width: 92%;
@@ -527,6 +596,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
+  margin-bottom: 20px;
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
@@ -552,6 +622,131 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+
+/* Contact Info Styling - Refactored */
+.contact-intro {
+  color: #121212;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.contact-item-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(111, 60, 97, 0.3);
+  border-radius: 20px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-item-wrapper:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #6f3c61;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(111, 60, 97, 0.2);
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: flex-start;
+}
+
+.contact-icon-circle {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(90.21deg, #bf82e0 -5.91%, #6f3c61 111.58%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.contact-header h4 {
+  color: #121212;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+}
+
+.contact-info-text {
+  margin-left: 65px;
+  text-align: left;
+  width: calc(100% - 65px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.email-link {
+  color: #6f3c61;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.email-link:hover {
+  color: #bcdb7c;
+  text-decoration: none;
+}
+
+.social-platforms {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.platform-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #121212;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 25px;
+  background: rgba(111, 60, 97, 0.1);
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.platform-link:hover {
+  background: rgba(111, 60, 97, 0.2);
+  color: #6f3c61;
+  text-decoration: none;
+  transform: translateX(5px);
+}
+
+.platform-link img {
+  width: 20px;
+  height: 20px;
 }
 
 /************ Footer Css ************/
@@ -630,7 +825,488 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: #B8B8B8;
+  color: #121212;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+/* Fix footer social icon visibility */
+.footer .social-icon a {
+  width: 42px;
+  height: 42px;
+  background: rgba(18, 18, 18, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(18, 18, 18, 0.5);
+}
+
+.footer .social-icon a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #6f3c61;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+
+.footer .social-icon a:hover::before {
+  transform: scale(1);
+}
+
+.footer .social-icon a img {
+  width: 40%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+  filter: brightness(0) saturate(100%) invert(7%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+.footer .social-icon a:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+/************ Responsive Design ************/
+
+/* Mobile Devices (320px to 768px) */
+@media (max-width: 767.98px) {
+  /* Navbar Mobile - Complete Reframe */
+  nav.navbar {
+    padding: 10px 0;
+    min-height: 70px;
+    background-color: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+  }
+  
+  nav.navbar.scrolled {
+    padding: 8px 0;
+    background-color: #121212;
+  }
+  
+  nav.navbar a.navbar-brand {
+    width: 15%;
+  }
+  
+  /* Mobile menu styling */
+  .navbar-collapse {
+    background-color: rgba(18, 18, 18, 0.98);
+    margin-top: 10px;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 15px 20px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  nav.navbar .navbar-nav .nav-link.navbar-link:last-child {
+    border-bottom: none;
+  }
+  
+  .social-icon {
+    margin: 20px 0 15px 0;
+    justify-content: center;
+  }
+  
+  button.vvd {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 10px auto 0 auto;
+    width: 80%;
+    max-width: 250px;
+    text-align: center;
+    display: block;
+  }
+  
+  /* Banner Mobile - Adjusted for new navbar */
+  .banner {
+    padding: 250px 0 50px 0;
+    margin-top: 0;
+  }
+  
+  .banner h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  
+  .banner .tagline {
+    font-size: 16px;
+    padding: 6px 8px;
+    margin-bottom: 12px;
+  }
+  
+  .banner p {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .banner button {
+    font-size: 16px;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Skills Mobile */
+  .skill-bx {
+    padding: 40px 20px;
+    margin-top: -30px;
+  }
+  
+  .skill h2 {
+    font-size: 32px;
+  }
+  
+  .skill p {
+    font-size: 16px;
+    margin: 10px 0 40px 0;
+  }
+  
+  .skill p br {
+    display: none;
+  }
+  
+  /* Skills Grid Mobile */
+  .skill-item {
+    padding: 15px 5px;
+    margin-bottom: 20px;
+  }
+  
+  .skill-item img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .skill-item h5 {
+    font-size: 14px;
+  }
+  
+  /* Projects Mobile */
+  .project {
+    padding: 50px 0;
+  }
+  
+  .project h2 {
+    font-size: 32px;
+  }
+  
+  .project p {
+    font-size: 16px;
+    width: 90%;
+    margin: 10px auto 20px auto;
+  }
+  
+  .project .nav.nav-pills {
+    width: 95%;
+    flex-direction: column;
+  }
+  
+  .project .nav.nav-pills .nav-item {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .project .nav.nav-pills .nav-link {
+    padding: 12px 0;
+    font-size: 15px;
+    border-radius: 25px !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  }
+  
+  .proj-txtx h4 {
+    font-size: 20px;
+  }
+  
+  .proj-txtx span {
+    font-size: 13px;
+  }
+  
+  /* Contact Mobile */
+  .contact {
+    padding: 40px 0 80px 0;
+  }
+  
+  .contact h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .contact form input, .contact form textarea {
+    padding: 15px 20px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .contact form button {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Footer Mobile */
+  .footer {
+    padding: 30px 0;
+  }
+  
+  .footer img {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  
+  .footer .social-icon {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .footer p {
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  /* Contact Info Mobile */
+  .contact-intro {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-card {
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    align-items: flex-start;
+  }
+  
+  .contact-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+    align-self: flex-start;
+  }
+  
+  .contact-content {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .contact-content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .contact-link {
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  .social-links {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .social-link {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
+
+/* Tablet Devices (768px to 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Navbar Tablet */
+  nav.navbar a.navbar-brand {
+    width: 10%;
+  }
+  
+  button.vvd {
+    padding: 15px 25px;
+    font-size: 16px;
+  }
+  
+  /* Banner Tablet */
+  .banner {
+    padding: 180px 0 80px 0;
+  }
+  
+  .banner h1 {
+    font-size: 45px;
+  }
+  
+  .banner p {
+    font-size: 17px;
+  }
+  
+  /* Skills Tablet */
+  .skill h2 {
+    font-size: 38px;
+  }
+  
+  .skill-bx {
+    padding: 50px 30px;
+  }
+  
+  /* Projects Tablet */
+  .project h2 {
+    font-size: 38px;
+  }
+  
+  .project p {
+    width: 80%;
+  }
+  
+  .project .nav.nav-pills {
+    width: 85%;
+  }
+  
+  /* Contact Tablet */
+  .contact h2 {
+    font-size: 38px;
+  }
+  
+  .contact {
+    padding: 50px 0 70px 0;
+  }
+}
+
+/* Large Devices (992px to 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .banner h1 {
+    font-size: 55px;
+  }
+  
+  .skill h2, .project h2, .contact h2 {
+    font-size: 40px;
+  }
+  
+  .project p {
+    width: 70%;
+  }
+}
+
+/* Extra Large Devices (1200px to 1399.98px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .banner h1 {
+    font-size: 60px;
+  }
+  
+  .project p {
+    width: 60%;
+  }
+}
+
+/* Small Mobile Devices (up to 575.98px) */
+@media (max-width: 575.98px) {
+  /* Extra small mobile devices */
+  nav.navbar {
+    padding: 8px 0;
+    min-height: 65px;
+  }
+  
+  .banner {
+    padding: 220px 0 40px 0;
+  }
+  
+  .banner h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  
+  .banner .tagline {
+    font-size: 14px;
+  }
+  
+  .banner p {
+    font-size: 14px;
+  }
+  
+  .skill h2, .project h2, .contact h2 {
+    font-size: 28px;
+  }
+  
+  .skill-bx {
+    padding: 30px 15px;
+  }
+  
+  .project .nav.nav-pills .nav-link {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  
+  .proj-txtx h4 {
+    font-size: 18px;
+  }
+  
+  .contact form input, .contact form textarea {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+  
+  .footer img {
+    width: 50%;
+  }
+}
+
+/* Landscape Mobile (orientation fix) */
+@media (max-width: 767.98px) and (orientation: landscape) {
+  .banner {
+    padding: 120px 0 40px 0;
+  }
+  
+  .banner h1 {
+    font-size: 32px;
+  }
+}
+
+/* Fix for very small screens */
+@media (max-width: 360px) {
+  .banner h1 {
+    font-size: 24px;
+  }
+  
+  .skill h2, .project h2, .contact h2 {
+    font-size: 24px;
+  }
+  
+  button.vvd {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Contact Info Mobile */
+.contact-item h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact-link {
+  font-size: 16px;
+  display: block;
+  text-align: center;
+}
+
+.contact-social {
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-message {
+  font-size: 14px;
+  text-align: center;
 }

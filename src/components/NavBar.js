@@ -77,11 +77,11 @@ export const NavBar = () => {
                 Projects
               </Nav.Link>
             </Nav>
-            <span className="navbar-text">
-              <div className="social-icon">
-                <a href="https://www.linkedin.com/in/sailasya/"><img src={navIcon1} alt="" /></a>
-                <a href="https://github.com/sailasya-m"><img src={navIcon2} alt="" /></a>
-                <a href="https://www.instagram.com/.lasya.?igsh=NnZsNzgzbWpqMW0w"><img src={navIcon3} alt="" /></a>
+            <span className="navbar-text d-flex flex-column flex-md-row align-items-center">
+              <div className="social-icon d-flex">
+                <a href="https://www.linkedin.com/in/sailasya/"><img src={navIcon1} alt="LinkedIn" /></a>
+                <a href="https://github.com/sailasya-m"><img src={navIcon2} alt="GitHub" /></a>
+                <a href="https://www.instagram.com/.lasya.?igsh=NnZsNzgzbWpqMW0w"><img src={navIcon3} alt="Instagram" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let's Connect</span></button>
