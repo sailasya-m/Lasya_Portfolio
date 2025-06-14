@@ -56,8 +56,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Lasya,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Hi, I'm Lasya, a Frontend Developer at Ralfsoft Technologies, where I craft responsive and engaging web interfaces. I previously worked as an Associate Product Manager at Tracxn, gaining valuable experience in product strategy and user-focused development.
+                <h1>{`Hi! I'm Sai Lasya Mynampati,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Hi, I'm Sai Lasya Mynampati, a Frontend Developer at Ralfsoft Technologies, where I craft responsive and engaging web interfaces. I previously worked as an Associate Product Manager at Tracxn, gaining valuable experience in product strategy and user-focused development.
 I hold a Bachelor's degree from Amrita Vishwa Vidyapeetham, where I built a strong foundation in technology and design.
 Passionate about creating intuitive digital experiences, I enjoy turning ideas into elegant, functional websites.
 Always eager to learn and grow, I aim to bridge the gap between design, development, and user needs.</p>
