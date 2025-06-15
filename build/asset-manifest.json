@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.655731a7.css",
-    "main.js": "/static/js/main.ba415e7c.js",
+    "main.css": "/static/css/main.65df6bef.css",
+    "main.js": "/static/js/main.951ffc21.js",
     "static/js/787.c1fd25cb.chunk.js": "/static/js/787.c1fd25cb.chunk.js",
     "static/media/color-sharp2.png": "/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/flower-unscreen.gif": "/static/media/flower-unscreen.a3fe537285bdb2df8efd.gif",
@@ -18,15 +18,12 @@
     "static/media/coffe1_2_1000x600.jpg": "/static/media/coffe1_2_1000x600.b9d011c4813408c7b406.jpg",
     "static/media/clothing_2_1000x600.jpg": "/static/media/clothing_2_1000x600.736a712a7de001fd336d.jpg",
     "index.html": "/index.html",
-    "static/media/nav-icon3.svg": "/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
-    "static/media/nav-icon2.svg": "/static/media/nav-icon2.e056d6c7a88c1ec5e543d27011562458.svg",
-    "static/media/nav-icon1.svg": "/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
-    "main.655731a7.css.map": "/static/css/main.655731a7.css.map",
-    "main.ba415e7c.js.map": "/static/js/main.ba415e7c.js.map",
+    "main.65df6bef.css.map": "/static/css/main.65df6bef.css.map",
+    "main.951ffc21.js.map": "/static/js/main.951ffc21.js.map",
     "787.c1fd25cb.chunk.js.map": "/static/js/787.c1fd25cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.655731a7.css",
-    "static/js/main.ba415e7c.js"
+    "static/css/main.65df6bef.css",
+    "static/js/main.951ffc21.js"
   ]
 }
