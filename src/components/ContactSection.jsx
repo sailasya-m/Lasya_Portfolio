@@ -60,8 +60,6 @@ export default function ContactSection() {
           <p className="contact-details">
             mynampatisailasya@gmail.com
             <br />
-            +91&nbsp;7094399917
-            <br />
             Bangalore, India
           </p>
         </article>
