@@ -66,10 +66,6 @@ export const Banner = () => {
                     <span>Frontend Developer at Ralfsoft Technologies</span>
                   </div>
                   <div className="highlight-item">
-                    <span className="highlight-icon">🚀</span>
-                    <span>Former Product Manager at Tracxn</span>
-                  </div>
-                  <div className="highlight-item">
                     <span className="highlight-icon">🎓</span>
                     <span>Graduate from Amrita Vishwa Vidyapeetham</span>
                   </div>
