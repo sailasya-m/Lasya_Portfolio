@@ -2,9 +2,6 @@ import { useState, useEffect } from "react";
 import { Link } from 'react-scroll';
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/flower-unscreen.gif';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -76,14 +73,33 @@ export const NavBar = () => {
               >
                 Projects
               </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="experience"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onSetActive={handleSetActive}
+                className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'}
+              >
+                Experience
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="education"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onSetActive={handleSetActive}
+                className={activeLink === 'education' ? 'active navbar-link' : 'navbar-link'}
+              >
+                Education
+              </Nav.Link>
             </Nav>
-            <span className="navbar-text d-flex flex-column flex-md-row align-items-center">
-              <div className="social-icon d-flex">
-                <a href="https://www.linkedin.com/in/sailasya/"><img src={navIcon1} alt="LinkedIn" /></a>
-                <a href="https://github.com/sailasya-m"><img src={navIcon2} alt="GitHub" /></a>
-                <a href="https://www.instagram.com/.lasya.?igsh=NnZsNzgzbWpqMW0w"><img src={navIcon3} alt="Instagram" /></a>
-              </div>
-              <HashLink to='#connect'>
+            <span className="navbar-text">
+              <HashLink to='#contact'>
                 <button className="vvd"><span>Let's Connect</span></button>
               </HashLink>
             </span>

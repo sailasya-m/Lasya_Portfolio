@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Sai Lasya Portfolio",
+  "name": "Sai Lasya Mynampati - Frontend Developer Portfolio",
+  "description": "Professional portfolio of Sai Lasya Mynampati, Frontend Developer and UI/UX Designer",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,9 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#6f3c61",
+  "background_color": "#151515",
+  "orientation": "portrait-primary",
+  "categories": ["portfolio", "developer", "design"],
+  "lang": "en-US"
 }
